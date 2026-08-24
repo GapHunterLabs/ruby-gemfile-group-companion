@@ -1,0 +1,12 @@
+source "https://rubygems.org"
+
+gem "rails", "~> 7.1"
+gem "pg"
+
+# Left ungrouped by accident -- flagged, ships in production.
+gem "rspec"
+
+group :development, :test do
+  gem "pry"
+  gem "factory_bot_rails"
+end

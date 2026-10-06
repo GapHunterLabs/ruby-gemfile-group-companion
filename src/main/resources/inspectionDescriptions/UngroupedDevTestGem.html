@@ -1,0 +1,10 @@
+<html>
+<body>
+Reports a well-known development or test gem (RSpec, RuboCop, Pry, FactoryBot, Capybara, SimpleCov, WebMock,
+VCR and similar) declared at the top level of a <code>Gemfile</code> instead of inside a
+<code>group :development</code> or <code>group :test</code> block.
+<!-- tooltip end -->
+<p>A top-level gem is installed in every environment, production included: the bundle grows, and a tool such as Pry
+becomes reachable where it should not be. The check is a line-based scan, so it works without the Ruby plugin.</p>
+</body>
+</html>
